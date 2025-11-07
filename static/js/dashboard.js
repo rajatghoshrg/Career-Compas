@@ -1,35 +1,41 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const skillContainer = document.getElementById("skills");
+document.addEventListener('DOMContentLoaded', () => {
+  const skillsContainer = document.getElementById('skillsContainer');
+  const addForm = document.getElementById('addSkillForm');
+  const skillName = document.getElementById('skillName');
+  const skillState = document.getElementById('skillState');
 
-  // Default skills if none exist
-  const defaultSkills = {
-    "Python": 60,
-    "Communication": 40,
-    "Problem Solving": 70
-  };
+  let userData = window.initialUserData || { skills: {} };
+  const saved = localStorage.getItem('career_user_data');
+  if (saved) userData = JSON.parse(saved);
 
-  const skills = JSON.parse(localStorage.getItem("skills")) || defaultSkills;
-  renderSkills();
-
-  function renderSkills() {
-    skillContainer.innerHTML = "";
-    for (const [skill, value] of Object.entries(skills)) {
-      const div = document.createElement("div");
-      div.className = "skill";
-      div.innerHTML = `
-        <strong>${skill}</strong>
-        <input type="range" min="0" max="100" value="${value}" 
-               onchange="updateSkill('${skill}', this.value)">
-        <progress value="${value}" max="100"></progress>
-        <span>${value}%</span>
-      `;
-      skillContainer.appendChild(div);
+  function render() {
+    skillsContainer.innerHTML = '';
+    for (let [name, state] of Object.entries(userData.skills || {})) {
+      const div = document.createElement('div');
+      div.className = 'card';
+      div.innerHTML = `<strong>${name}</strong> — ${state} <button data-skill=\"${name}\">Toggle</button>`;
+      skillsContainer.appendChild(div);
     }
+    localStorage.setItem('career_user_data', JSON.stringify(userData));
   }
 
-  window.updateSkill = (skill, val) => {
-    skills[skill] = parseInt(val);
-    localStorage.setItem("skills", JSON.stringify(skills));
-    renderSkills();
-  };
+  addForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const name = skillName.value.trim();
+    const state = skillState.value;
+    if (!name) return;
+    userData.skills[name] = state;
+    skillName.value = '';
+    render();
+  });
+
+  skillsContainer.addEventListener('click', e => {
+    if (e.target.tagName === 'BUTTON') {
+      const s = e.target.dataset.skill;
+      userData.skills[s] = userData.skills[s] === 'learned' ? 'in_progress' : 'learned';
+      render();
+    }
+  });
+
+  render();
 });

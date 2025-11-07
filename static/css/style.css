@@ -1,0 +1,30 @@
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --accent: #2563eb;
+}
+body {
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(135deg, #071025, #0f1f3a);
+  color: #e6eef8;
+  margin: 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+.nav-links { list-style: none; display: flex; gap: 1rem; }
+.nav-links a { color: white; text-decoration: none; }
+.hero { text-align: center; padding: 3rem; }
+.btn { background: var(--accent); color: white; padding: 0.7rem 1.2rem; border-radius: 10px; text-decoration: none; }
+.card { background: rgba(255,255,255,0.03); padding: 1rem; border-radius: 10px; }
+.chat-floating {
+  position: fixed; bottom: 20px; right: 20px; background: var(--accent);
+  color: white; border-radius: 50%; width: 56px; height: 56px; border: none; font-size: 24px;
+}
+.qcard { background: rgba(255,255,255,0.05); padding: 1rem; margin: 1rem 0; border-radius: 8px; }
+.progress-wrap { background: rgba(255,255,255,0.05); height: 10px; border-radius: 8px; }
+.progress { height: 10px; width: 0; background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+.chat-window { height: 400px; background: rgba(255,255,255,0.05); border-radius: 8px; padding: 1rem; overflow-y: auto; }

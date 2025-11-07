@@ -1,27 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Admin Panel</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body { background: #001f3f; color: white; font-family: 'Poppins'; text-align: center; padding: 40px; }
-    textarea { width: 80%; height: 200px; border-radius: 10px; padding: 10px; }
-    input, select { padding: 10px; border-radius: 6px; }
-    button { background: #00ccff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; }
-  </style>
-</head>
-<body>
-  <h2>🔐 Admin Panel</h2>
-  <form method="POST">
-    <input type="password" name="password" placeholder="Enter admin password" required><br><br>
-    <select name="section">
-      <option value="quiz_data">Quiz Data</option>
-      <option value="career_chatbot">Chatbot Data</option>
-      <option value="career_resources">Career Resources</option>
-    </select><br><br>
-    <textarea name="data" placeholder="Paste updated JSON data here..."></textarea><br><br>
-    <button type="submit">Update Data</button>
+{% extends 'base.html' %}
+{% block content %}
+<section class="admin">
+  <h2>Admin Panel</h2>
+  <p>{{ message }}</p>
+  <form method="post">
+    <label>Password: <input name="pw" type="password"></label>
+    <h4>Quiz JSON</h4>
+    <textarea name="quiz_blob" rows="8"></textarea>
+    <h4>Chatbot JSON</h4>
+    <textarea name="chat_blob" rows="8"></textarea>
+    <h4>Resources JSON</h4>
+    <textarea name="resources_blob" rows="8"></textarea>
+    <button>Save</button>
   </form>
-</body>
-</html>
+</section>
+{% endblock %}
