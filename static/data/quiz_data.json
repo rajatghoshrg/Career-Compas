@@ -1,0 +1,246 @@
+{
+  "surveyTitle": "Smart Career Guidance Survey",
+  "surveyDescription": "This survey helps us understand your interests, skills, and personality to recommend the best career paths and learning roadmap for you.",
+  "sections": [
+    {
+      "sectionTitle": "Basic Information",
+      "questions": [
+        { "id": 1, "question": "What is your full name?", "type": "text" },
+        {
+          "id": 2,
+          "question": "What is your age group?",
+          "type": "radio",
+          "options": ["Below 18", "18–24", "25–30", "Above 30"]
+        },
+        {
+          "id": 3,
+          "question": "What is your highest level of education?",
+          "type": "radio",
+          "options": ["High school", "Diploma", "Undergraduate", "Postgraduate", "Other"]
+        },
+        {
+          "id": 4,
+          "question": "What is your current field of study or job title (if any)?",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Interests and Passion",
+      "questions": [
+        {
+          "id": 5,
+          "question": "Which of these activities do you enjoy the most?",
+          "type": "checkbox",
+          "options": [
+            "Solving problems and puzzles",
+            "Creating or designing things",
+            "Helping or teaching others",
+            "Working with data or numbers",
+            "Managing or organizing events",
+            "Exploring science and technology"
+          ]
+        },
+        {
+          "id": 6,
+          "question": "What type of work environment do you prefer?",
+          "type": "radio",
+          "options": [
+            "Office setting",
+            "Remote/flexible work",
+            "Outdoor or on-field work",
+            "Creative studio or lab"
+          ]
+        },
+        {
+          "id": 7,
+          "question": "What subjects or topics do you naturally find interesting?",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Skills and Strengths",
+      "questions": [
+        {
+          "id": 8,
+          "question": "How would you rate your technical skills?",
+          "type": "radio",
+          "options": ["Beginner", "Intermediate", "Advanced"]
+        },
+        {
+          "id": 9,
+          "question": "Which of the following best describes your soft skills? (Select all that apply)",
+          "type": "checkbox",
+          "options": [
+            "Communication",
+            "Leadership",
+            "Creativity",
+            "Analytical thinking",
+            "Teamwork",
+            "Time management"
+          ]
+        },
+        {
+          "id": 10,
+          "question": "What skills would you like to improve or learn in the future?",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Personality & Work Style",
+      "questions": [
+        {
+          "id": 11,
+          "question": "Are you more of a:",
+          "type": "radio",
+          "options": ["Planner (organized and structured)", "Explorer (flexible and spontaneous)"]
+        },
+        {
+          "id": 12,
+          "question": "Do you prefer:",
+          "type": "radio",
+          "options": ["Working alone", "Working in a team"]
+        },
+        {
+          "id": 13,
+          "question": "How do you handle challenges?",
+          "type": "radio",
+          "options": [
+            "Analyze and solve logically",
+            "Seek help and discuss with others",
+            "Try new creative ways"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Goals & Career Vision",
+      "questions": [
+        {
+          "id": 14,
+          "question": "What motivates you the most in a career?",
+          "type": "radio",
+          "options": [
+            "Earning a good income",
+            "Making a positive impact",
+            "Learning and growth",
+            "Job stability",
+            "Creativity and freedom"
+          ]
+        },
+        { "id": 15, "question": "Where do you see yourself in the next 5 years?", "type": "text" },
+        {
+          "id": 16,
+          "question": "What kind of job roles or industries interest you the most?",
+          "type": "text"
+        },
+        {
+          "id": 17,
+          "question": "Would you like personalized career recommendations and roadmap based on your responses?",
+          "type": "radio",
+          "options": ["Yes", "No"]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Aptitude & Thinking Style",
+      "questions": [
+        {
+          "id": 18,
+          "question": "Do you enjoy solving logical or analytical problems?",
+          "type": "radio",
+          "options": ["Yes", "No"]
+        },
+        {
+          "id": 19,
+          "question": "Are you comfortable working with numbers and data?",
+          "type": "radio",
+          "options": ["Yes", "No"]
+        },
+        {
+          "id": 20,
+          "question": "Do you like writing or expressing ideas creatively?",
+          "type": "radio",
+          "options": ["Yes", "No"]
+        },
+        {
+          "id": 21,
+          "question": "How quickly do you make decisions?",
+          "type": "radio",
+          "options": ["Very Fast", "Average", "Slowly after thinking"]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Values & Lifestyle Preferences",
+      "questions": [
+        {
+          "id": 22,
+          "question": "What matters most to you in a job?",
+          "type": "radio",
+          "options": ["Passion", "Money", "Stability", "Fame", "Helping others"]
+        },
+        {
+          "id": 23,
+          "question": "Do you prefer a high-paced or relaxed work culture?",
+          "type": "radio",
+          "options": ["High-paced", "Relaxed"]
+        },
+        {
+          "id": 24,
+          "question": "Are you open to relocation or traveling frequently for work?",
+          "type": "radio",
+          "options": ["Yes", "No"]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Work Personality Type",
+      "questions": [
+        {
+          "id": 25,
+          "question": "When facing new tasks, do you prefer following instructions or experimenting your own way?",
+          "type": "radio",
+          "options": ["Following instructions", "Experimenting my own way"]
+        },
+        {
+          "id": 26,
+          "question": "Do you enjoy working with people, data, or tools/machines?",
+          "type": "radio",
+          "options": ["People", "Data", "Tools/Machines"]
+        },
+        {
+          "id": 27,
+          "question": "Which word describes you best?",
+          "type": "radio",
+          "options": ["Realistic", "Investigative", "Artistic", "Social", "Enterprising", "Conventional"]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Career Readiness & Learning Preference",
+      "questions": [
+        {
+          "id": 28,
+          "question": "Have you ever done any internship or project in your field?",
+          "type": "radio",
+          "options": ["Yes", "No"]
+        },
+        {
+          "id": 29,
+          "question": "How do you prefer learning new things?",
+          "type": "radio",
+          "options": ["Online courses", "Reading books", "Practical experience", "Workshops"]
+        },
+        {
+          "id": 30,
+          "question": "Are you looking for immediate job options or long-term career planning?",
+          "type": "radio",
+          "options": ["Immediate job", "Long-term planning"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "Software Developer": {
+    "description": "Develops and maintains software applications, websites, or systems.",
+    "skills": ["Python", "JavaScript", "C/C++", "Problem Solving", "Git", "Web Development"],
+    "roadmap": [
+      "Learn basic programming concepts",
+      "Understand data structures and algorithms",
+      "Build small projects like calculators or portfolio sites",
+      "Explore backend and frontend development",
+      "Do internships or contribute to open source"
+    ],
+    "resources": ["FreeCodeCamp", "GeeksforGeeks", "LeetCode", "W3Schools", "Coursera: Programming Foundations"],
+    "suitableFor": ["Solving problems", "Technology interest", "Analytical thinking"]
+  },
+  "Web Developer": {
+    "description": "Builds and designs websites and web applications.",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "UI/UX", "Debugging"],
+    "roadmap": [
+      "Learn HTML, CSS, and JavaScript",
+      "Understand responsive web design",
+      "Explore frameworks like React or Vue",
+      "Build real-world projects",
+      "Host and deploy websites"
+    ],
+    "resources": ["freeCodeCamp", "MDN Web Docs", "Scrimba", "Coursera: Web Design for Everybody"],
+    "suitableFor": ["Creative work", "Technology", "Project-based learners"]
+  },
+  "Data Analyst": {
+    "description": "Analyzes and interprets data to help businesses make decisions.",
+    "skills": ["Excel", "SQL", "Python", "Data Visualization", "Analytical Thinking"],
+    "roadmap": [
+      "Learn Excel and statistics basics",
+      "Study SQL for data management",
+      "Use Python libraries (pandas, matplotlib)",
+      "Build visualization dashboards",
+      "Work on real datasets"
+    ],
+    "resources": ["Kaggle", "Google Data Analytics", "LinkedIn Learning: Data Visualization"],
+    "suitableFor": ["Analytical", "Logical thinking", "Working with numbers"]
+  },
+  "Graphic Designer": {
+    "description": "Creates visual concepts, layouts, and digital graphics for brands or media.",
+    "skills": ["Adobe Photoshop", "Illustrator", "Creativity", "Typography", "Color Theory"],
+    "roadmap": [
+      "Understand design principles",
+      "Learn design software",
+      "Build portfolio projects",
+      "Collaborate or freelance",
+      "Work with brands or agencies"
+    ],
+    "resources": ["Canva", "Behance", "Dribbble", "Coursera: Graphic Design Basics"],
+    "suitableFor": ["Creative", "Design interest", "Artistic mindset"]
+  },
+  "UI/UX Designer": {
+    "description": "Designs user-friendly and visually appealing app and web interfaces.",
+    "skills": ["Figma", "User Research", "Wireframing", "Prototyping", "Design Thinking"],
+    "roadmap": [
+      "Learn UI/UX basics",
+      "Understand user psychology",
+      "Build design projects and prototypes",
+      "Test designs and gather feedback",
+      "Create portfolio and apply for roles"
+    ],
+    "resources": ["Figma Learn", "Coursera: UI/UX Design", "Interaction Design Foundation"],
+    "suitableFor": ["Creative", "Analytical", "Empathetic learners"]
+  },
+  "Digital Marketer": {
+    "description": "Promotes products and services using digital channels and tools.",
+    "skills": ["SEO", "Content Marketing", "Social Media", "Analytics", "Copywriting"],
+    "roadmap": [
+      "Understand marketing principles",
+      "Learn SEO and analytics",
+      "Run social media campaigns",
+      "Experiment with paid ads",
+      "Build case studies or portfolio"
+    ],
+    "resources": ["Google Digital Garage", "HubSpot Academy", "Coursera: Digital Marketing Specialization"],
+    "suitableFor": ["Creative", "Entrepreneurial", "Social"]
+  },
+  "Entrepreneur": {
+    "description": "Starts and manages a business or startup venture.",
+    "skills": ["Leadership", "Creativity", "Financial Management", "Marketing", "Decision Making"],
+    "roadmap": [
+      "Identify a business idea or problem to solve",
+      "Create a business plan",
+      "Learn basic finance and marketing",
+      "Launch small MVP (product or service)",
+      "Scale through digital marketing or funding"
+    ],
+    "resources": ["Y Combinator Startup School", "Google for Startups", "Coursera: Entrepreneurship"],
+    "suitableFor": ["Creative", "Leader", "Risk-taker"]
+  },
+  "Teacher": {
+    "description": "Educates students and helps them learn new skills or subjects.",
+    "skills": ["Communication", "Patience", "Creativity", "Organization"],
+    "roadmap": [
+      "Choose a teaching subject",
+      "Learn pedagogy and lesson planning",
+      "Practice teaching or tutoring",
+      "Gain B.Ed or equivalent certification",
+      "Adopt digital tools for teaching"
+    ],
+    "resources": ["Khan Academy", "Coursera: Teaching Foundations", "Google for Education"],
+    "suitableFor": ["Social", "Helping others", "Planner"]
+  },
+  "Doctor": {
+    "description": "Diagnoses and treats patients to maintain health and wellness.",
+    "skills": ["Medical Knowledge", "Empathy", "Decision Making", "Attention to Detail"],
+    "roadmap": [
+      "Complete MBBS or equivalent medical degree",
+      "Do internships in hospitals",
+      "Specialize in a chosen field",
+      "Keep up with new research and tools"
+    ],
+    "resources": ["WHO eLearning", "Coursera: Public Health", "NPTEL Health Sciences"],
+    "suitableFor": ["Helping others", "Science interest", "Patient"]
+  },
+  "Nurse": {
+    "description": "Provides healthcare support and care to patients under supervision of doctors.",
+    "skills": ["Communication", "Empathy", "Teamwork", "Clinical Skills"],
+    "roadmap": [
+      "Complete nursing training or B.Sc. Nursing",
+      "Gain clinical experience",
+      "Work in hospitals or clinics",
+      "Upgrade with certifications"
+    ],
+    "resources": ["WHO Nursing Courses", "Coursera: Health Care Management"],
+    "suitableFor": ["Helping others", "Social", "Patient"]
+  },
+  "Civil Engineer": {
+    "description": "Designs and supervises construction of buildings, bridges, and infrastructure.",
+    "skills": ["AutoCAD", "Mathematics", "Project Management", "Structural Design"],
+    "roadmap": [
+      "Learn civil engineering fundamentals",
+      "Use tools like AutoCAD or Revit",
+      "Work on internships or site visits",
+      "Apply for jobs in construction firms"
+    ],
+    "resources": ["NPTEL Civil Engineering", "Coursera: Structural Engineering Basics"],
+    "suitableFor": ["Realistic", "Problem solver", "Planner"]
+  },
+  "Mechanical Engineer": {
+    "description": "Designs and develops machines and mechanical systems.",
+    "skills": ["Physics", "AutoCAD", "SolidWorks", "Problem Solving"],
+    "roadmap": [
+      "Understand mechanical principles",
+      "Learn CAD design and tools",
+      "Work on small prototype projects",
+      "Do internships or industrial training"
+    ],
+    "resources": ["SolidWorks Tutorials", "Coursera: Mechanical Design Basics"],
+    "suitableFor": ["Logical", "Hands-on", "Planner"]
+  },
+  "Electrical Engineer": {
+    "description": "Designs and maintains electrical systems and devices.",
+    "skills": ["Circuit Design", "MATLAB", "Electronics", "Problem Solving"],
+    "roadmap": [
+      "Learn circuit theory and microcontrollers",
+      "Experiment with hardware projects",
+      "Work in labs or energy companies"
+    ],
+    "resources": ["Coursera: Electrical Engineering", "NPTEL Power Systems"],
+    "suitableFor": ["Analytical", "Technical", "Logical"]
+  },
+  "AI / Machine Learning Engineer": {
+    "description": "Builds systems that learn and make intelligent decisions using data.",
+    "skills": ["Python", "Data Science", "TensorFlow", "Mathematics", "Statistics"],
+    "roadmap": [
+      "Learn Python and statistics",
+      "Study machine learning algorithms",
+      "Work on ML projects (image, text, prediction)",
+      "Understand AI ethics and deployment"
+    ],
+    "resources": ["Kaggle", "Coursera: Machine Learning by Andrew Ng", "Google AI"],
+    "suitableFor": ["Analytical", "Technology-focused", "Curious"]
+  },
+  "Cybersecurity Expert": {
+    "description": "Protects digital systems and data from cyber threats.",
+    "skills": ["Networking", "Ethical Hacking", "Linux", "Security Analysis"],
+    "roadmap": [
+      "Learn networking and system security",
+      "Understand ethical hacking tools",
+      "Simulate attacks and defenses",
+      "Gain certifications (CEH, CompTIA Security+)"
+    ],
+    "resources": ["TryHackMe", "Cybrary", "Coursera: Cybersecurity Basics"],
+    "suitableFor": ["Logical", "Technology", "Problem solver"]
+  },
+  "Police / Defense": {
+    "description": "Maintains public safety, law enforcement, and national defense.",
+    "skills": ["Discipline", "Physical Fitness", "Decision Making", "Courage"],
+    "roadmap": [
+      "Pass government or defense exams",
+      "Undergo physical and mental training",
+      "Serve in law enforcement or defense services"
+    ],
+    "resources": ["UPSC / SSC Portal", "National Defense Academy Website"],
+    "suitableFor": ["Realistic", "Leader", "Brave"]
+  },
+  "Lawyer": {
+    "description": "Interprets laws, represents clients, and provides legal advice.",
+    "skills": ["Research", "Communication", "Critical Thinking", "Ethics"],
+    "roadmap": [
+      "Pursue LLB or equivalent degree",
+      "Intern with law firms",
+      "Specialize (criminal, corporate, civil)",
+      "Clear bar exams"
+    ],
+    "resources": ["Lawctopus", "Coursera: Legal Studies"],
+    "suitableFor": ["Analytical", "Social", "Planner"]
+  },
+  "Psychologist": {
+    "description": "Studies mental processes and helps people with emotional challenges.",
+    "skills": ["Empathy", "Listening", "Critical Thinking", "Communication"],
+    "roadmap": [
+      "Pursue degree in Psychology",
+      "Intern under professionals",
+      "Specialize in clinical, counseling, or child psychology",
+      "Work in hospitals, NGOs, or independently"
+    ],
+    "resources": ["NIMHANS", "Coursera: Introduction to Psychology"],
+    "suitableFor": ["Helping others", "Empathetic", "Patient"]
+  },
+  "Content Writer": {
+    "description": "Writes blogs, articles, and digital content for brands or media.",
+    "skills": ["Writing", "Research", "Storytelling", "SEO"],
+    "roadmap": [
+      "Learn writing and editing skills",
+      "Understand SEO and digital marketing",
+      "Build personal blog or portfolio",
+      "Freelance or apply to companies"
+    ],
+    "resources": ["Medium", "Grammarly", "Coursera: Creative Writing"],
+    "suitableFor": ["Creative", "Expressive", "Independent"]
+  },
+  "Journalist": {
+    "description": "Collects and reports news through various media platforms.",
+    "skills": ["Research", "Writing", "Communication", "Ethics"],
+    "roadmap": [
+      "Pursue degree in journalism or mass comm",
+      "Intern at media organizations",
+      "Develop specialization (print, broadcast, digital)"
+    ],
+    "resources": ["Coursera: Journalism", "Reuters Foundation Courses"],
+    "suitableFor": ["Social", "Investigative", "Expressive"]
+  },
+  "Artist": {
+    "description": "Expresses ideas through visual, performing, or digital art.",
+    "skills": ["Drawing", "Creativity", "Observation", "Color Theory"],
+    "roadmap": [
+      "Learn art techniques and materials",
+      "Build portfolio or showcase work",
+      "Sell art or freelance"
+    ],
+    "resources": ["Skillshare", "DeviantArt", "ArtStation"],
+    "suitableFor": ["Creative", "Independent", "Artistic"]
+  },
+  "Fashion Designer": {
+    "description": "Designs clothing and accessories blending art and trends.",
+    "skills": ["Creativity", "Illustration", "Sewing", "Fashion Trends"],
+    "roadmap": [
+      "Study fashion design basics",
+      "Learn fabric and pattern making",
+      "Create design portfolio",
+      "Work with boutiques or brands"
+    ],
+    "resources": ["Coursera: Fashion Design", "Vogue Business School"],
+    "suitableFor": ["Creative", "Trend-focused", "Artistic"]
+  },
+  "Photographer": {
+    "description": "Captures visual stories through images and editing.",
+    "skills": ["Camera Handling", "Composition", "Lighting", "Editing"],
+    "roadmap": [
+      "Learn photography basics",
+      "Practice various genres (portrait, nature, product)",
+      "Build a portfolio",
+      "Freelance or work with studios"
+    ],
+    "resources": ["Skillshare Photography", "YouTube: Photography Tutorials"],
+    "suitableFor": ["Creative", "Observant", "Explorer"]
+  },
+  "Filmmaker / Video Editor": {
+    "description": "Creates and edits video content for films, media, or online platforms.",
+    "skills": ["Storytelling", "Editing Software", "Creativity", "Visual Composition"],
+    "roadmap": [
+      "Learn filming and editing tools (Premiere Pro, DaVinci Resolve)",
+      "Work on short film projects",
+      "Build portfolio and collaborate"
+    ],
+    "resources": ["Coursera: Film Production", "YouTube: Editing Tutorials"],
+    "suitableFor": ["Creative", "Collaborative", "Visual thinker"]
+  },
+  "Sports Coach / Athlete": {
+    "description": "Trains and guides individuals or teams in physical activities and sports.",
+    "skills": ["Fitness", "Leadership", "Discipline", "Motivation"],
+    "roadmap": [
+      "Choose a sport or area of fitness",
+      "Gain certifications",
+      "Train consistently",
+      "Coach or compete professionally"
+    ],
+    "resources": ["National Sports Academy", "Coursera: Sports Management"],
+    "suitableFor": ["Active", "Leader", "Motivator"]
+  },
+  "Agricultural Scientist": {
+    "description": "Improves farming techniques and food production using science.",
+    "skills": ["Biology", "Chemistry", "Observation", "Experimentation"],
+    "roadmap": [
+      "Pursue B.Sc. Agriculture",
+      "Conduct research on crops and soil",
+      "Work in agriculture or government labs"
+    ],
+    "resources": ["ICAR Portal", "NPTEL: Agricultural Science"],
+    "suitableFor": ["Investigative", "Nature lover", "Scientific"]
+  }
+}
