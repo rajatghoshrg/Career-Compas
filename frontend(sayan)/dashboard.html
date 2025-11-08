@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Compass - Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="site">
+    <!-- ✅ Navbar -->
+    <header>
+      <div class="brand">Career Compass</div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="chat.html">Chatbot</a></li>
+          <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ✅ Dashboard Content -->
+    <main>
+      <h1 class="title">Your Career Dashboard</h1>
+      <p class="subtitle">Track your quiz results, goals, and recommended resources — all in one place.</p>
+
+      <section class="dashboard-grid">
+        <div class="card progress-card">
+          <h3>Quiz Progress</h3>
+          <div class="progress-circle">
+            <svg viewBox="0 0 36 36">
+              <path class="bg" d="M18 2.0845a15.9155 15.9155 0 0 1 0 31.831a15.9155 15.9155 0 0 1 0-31.831"/>
+              <path class="progress" stroke-dasharray="70, 100" d="M18 2.0845a15.9155 15.9155 0 0 1 0 31.831a15.9155 15.9155 0 0 1 0-31.831"/>
+            </svg>
+            <div class="percent">70%</div>
+          </div>
+        </div>
+
+        <div class="card goals-card">
+          <h3>Career Goals</h3>
+          <ul>
+            <li>✔️ Complete Personality Quiz</li>
+            <li>⏳ Explore 3 career paths</li>
+            <li>❌ Build first resume</li>
+          </ul>
+        </div>
+
+        <div class="card resources-card">
+          <h3>Recommended Resources</h3>
+          <div class="resource">
+            <strong>Resume Templates</strong>
+            <p>Modern, ATS-friendly templates to start your resume today.</p>
+            <a href="#">Download →</a>
+          </div>
+          <div class="resource">
+            <strong>Top Career Courses</strong>
+            <p>Upskill yourself with free and paid online programs.</p>
+            <a href="#">Explore →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
