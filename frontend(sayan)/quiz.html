@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Compass - Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="site">
+    <!-- ✅ Navbar (same as homepage) -->
+    <header>
+      <div class="brand">Career Compass</div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="quiz.html" class="active">Quiz</a></li>
+          <li><a href="#chat">Chatbot</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ✅ Quiz Section -->
+    <main>
+      <div class="quiz-container">
+        <h1>Find Your Ideal Career Path</h1>
+        <p class="subtitle">Answer a few questions to get personalized suggestions!</p>
+
+        <div id="quiz-box">
+          <div id="question-container">
+            <h2 id="question">Loading question...</h2>
+            <div id="answer-buttons" class="btn-grid"></div>
+          </div>
+
+          <div id="controls">
+            <button id="next-btn" class="btn next-btn">Next</button>
+          </div>
+        </div>
+
+        <div id="result-box" class="hidden">
+          <h2>Your Recommended Career Path:</h2>
+          <p id="career-result"></p>
+          <button id="restart-btn" class="btn">Restart Quiz</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

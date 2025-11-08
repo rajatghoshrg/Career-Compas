@@ -1,0 +1,126 @@
+:root {
+  --bg: #071028;
+  --card: #0b1a33;
+  --text: #ffffff;
+  --accent: #3b82f6;
+  --muted: rgba(255,255,255,0.7);
+  --radius: 12px;
+  --transition: 0.25s ease;
+}
+
+/* Overall Layout */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.site {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ✅ Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--accent);
+}
+
+/* ✅ Quiz Section */
+.quiz-container {
+  background: var(--card);
+  padding: 32px;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.btn-grid {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+.next-btn {
+  margin-top: 20px;
+  background: #1e40af;
+}
+
+.hidden {
+  display: none;
+}
+
+#result-box {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .quiz-container {
+    padding: 20px;
+  }
+  nav ul {
+    gap: 14px;
+  }
+}
