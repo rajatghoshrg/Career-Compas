@@ -1,0 +1,143 @@
+:root {
+  --bg: #071028;
+  --card: #0b1a33;
+  --text: #ffffff;
+  --accent: #3b82f6;
+  --muted: rgba(255,255,255,0.7);
+  --radius: 12px;
+  --transition: 0.25s ease;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.site {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ✅ Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--accent);
+}
+
+/* ✅ Chatbot Section */
+.chat-container {
+  background: var(--card);
+  padding: 32px;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.chat-box {
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  height: 400px;
+  overflow-y: auto;
+  padding: 16px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  scroll-behavior: smooth;
+}
+
+.bot-msg, .user-msg {
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  max-width: 75%;
+}
+
+.bot-msg {
+  background: rgba(59,130,246,0.15);
+  align-self: flex-start;
+}
+
+.user-msg {
+  background: var(--accent);
+  align-self: flex-end;
+}
+
+.input-area {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 12px;
+  border-radius: var(--radius);
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  font-size: 16px;
+}
+
+.input-area button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 12px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.input-area button:hover {
+  background: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .chat-container {
+    padding: 20px;
+  }
+  nav ul {
+    gap: 14px;
+  }
+}

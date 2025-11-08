@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Compass - Chatbot</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <div class="site">
+    <!-- ✅ Navbar (same as other pages) -->
+    <header>
+      <div class="brand">Career Compass</div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="chat.html" class="active">Chatbot</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ✅ Chatbot Section -->
+    <main>
+      <div class="chat-container">
+        <h1>Career Advisor Chatbot</h1>
+        <p class="subtitle">Ask me anything about careers, skills, or job paths!</p>
+
+        <div class="chat-box" id="chat-box">
+          <div class="bot-msg">👋 Hi! I'm your Career Compass Bot. How can I help you today?</div>
+        </div>
+
+        <div class="input-area">
+          <input type="text" id="user-input" placeholder="Type your message..." />
+          <button id="send-btn">Send</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>
