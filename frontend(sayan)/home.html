@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Career Compass</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Discover your ideal career path — Quiz, resources and friendly career advisor." />
+ <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <div class="site">
+    <header>
+      <div class="brand">Career Compass</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#chat">Chatbot</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div>
+          <h1>Discover your ideal career path</h1>
+          <p>Personalized roadmaps, resources, and a friendly career advisor — start with a short quiz and get a roadmap tailored to your interests.</p>
+          <a id="cta-quiz" class="btn" href="#quiz">Take the Quiz</a>
+        </div>
+      </section>
+
+      <div class="section-title">Quick Resources</div>
+
+      <section class="resources-wrap">
+        <!-- big card showing no resources (mirrors your screenshot) -->
+        <div class="card">
+          <h3>No resources available</h3>
+          <p>Add resources via the admin panel.</p>
+        </div>
+
+        <!-- beneath that, a grid for resource cards (empty by default) -->
+        <div class="resource-grid" id="resource-grid">
+          <!-- JS will populate resources here if present -->
+        </div>
+
+      </section>
+
+      <div style="height:56px"></div>
+    </main>
+
+    <footer></footer>
+  </div>
+
+  <!-- floating chatbot button -->
+  <div class="chat-floating" id="chat-btn" aria-label="Open chat">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z" fill="white" opacity="0.98"/>
+    </svg>
+  </div>
+
+  <script src="home.js"></script>
+</body>
+</html>
