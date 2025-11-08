@@ -12,7 +12,14 @@
     <button>Add</button>
   </form>
 </section>
+
+<!-- ✅ Safe JSON embedding -->
+<script id="userDataScript" type="application/json">
+  {{ user_data | tojson }}
+</script>
 <script>
-  const initialUserData = {{ user_data | tojson | safe }};
+  const initialUserData = JSON.parse(
+    document.getElementById("userDataScript").textContent
+  );
 </script>
 {% endblock %}

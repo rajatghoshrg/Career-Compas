@@ -4,20 +4,41 @@
   <h2>{{ career.title }}</h2>
   <p>{{ career.description }}</p>
   <p>Match: {{ matching_pct }}%</p>
+
   <h3>Suggested Skills</h3>
   <ul>
     {% for s in career.skills %}
       <li>{{ s }}</li>
     {% endfor %}
   </ul>
+
   <h3>Roadmap</h3>
   <canvas id="roadmapChart"></canvas>
+
+  <!-- SAFE: embed roadmap JSON without breaking JS -->
+  <script id="roadmapData" type="application/json">
+    {{ career.roadmap | default([]) | tojson }}
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
-    const roadmap = {{ career.roadmap | tojson | safe }};
-    const labels = roadmap.map((r,i) => 'Stage ' + (i+1));
-    const data = { labels, datasets: [{ label: 'Career Roadmap', data: roadmap.map((_,i)=> (i+1)*25) }] };
-    new Chart(document.getElementById('roadmapChart'), { type: 'bar', data });
+    // parse JSON safely from the dedicated script tag
+    const roadmap = JSON.parse(document.getElementById('roadmapData').textContent || '[]');
+
+    const labels = roadmap.map((r, i) => 'Stage ' + (i + 1));
+    const data = {
+      labels,
+      datasets: [{
+        label: 'Career Roadmap',
+        // simple numeric values for visualization (you can replace with real progress values)
+        data: roadmap.map((_, i) => (i + 1) * 25)
+      }]
+    };
+
+    new Chart(document.getElementById('roadmapChart'), {
+      type: 'bar',
+      data
+    });
   </script>
 </section>
 {% endblock %}

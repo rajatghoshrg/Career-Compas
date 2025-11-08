@@ -5,13 +5,21 @@
   <p>Personalized roadmaps, resources, and a friendly career advisor.</p>
   <a class="btn" href="/quiz">Take the Quiz</a>
 </section>
+
 <section class="resources">
   <h2>Quick Resources</h2>
   <div class="cards">
-    {% for cat, items in resources.resources.items() %}
+    {# access resources safely and default to empty dict #}
+    {% set res_by_cat = resources.get('resources', {}) if resources is mapping else {} %}
+    {% for cat, items in res_by_cat.items() %}
       <div class="card">
         <h3>{{ cat }}</h3>
         <p>{{ items|length }} resources</p>
+      </div>
+    {% else %}
+      <div class="card">
+        <h3>No resources available</h3>
+        <p>Add resources via the admin panel.</p>
       </div>
     {% endfor %}
   </div>
